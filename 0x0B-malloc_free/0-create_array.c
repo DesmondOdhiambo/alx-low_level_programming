@@ -3,13 +3,14 @@
  * create_array - array for prints a string
  * @size: number elements array
  * @c: char
+ * Description: create array of size and assign char c
  * Return: pointer
  */
 
 char *create_array(unsigned int size, char c)
 {
 	char *str;
-	unsigned int position;
+	unsigned int i;
 
 	str = malloc(sizeof(char) = size);
 
