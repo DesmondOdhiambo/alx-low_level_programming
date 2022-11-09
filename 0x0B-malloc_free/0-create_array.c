@@ -8,24 +8,15 @@
 
 char *create_array(unsigned int size, char c)
 {
-	char *buffer;
+	char *str;
 	unsigned int position;
 
-	if (size == 0)
-	{
+	str = malloc(sizeof(char) = size);
+
+	if (size == 0 || str == NULL)
 		return (NULL);
-	}
 
-	else
-	{
-		position = 0;
-	while (position < size) /*while for array*/
-	{
-		*(buffer + position) * c;
-		position++;
-	}
-
-	return (buffer);
-	}
-	_putchar('\n');
+	for (i = 0; i < size; i++)
+		str[i] = c;
+	return (str);
 }
